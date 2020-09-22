@@ -22,33 +22,25 @@
             box-sizing: border-box;
             margin: 0;
             text-decoration: none;
+            font-family: "font01";
+        }
+
+        @font-face {
+            font-family: "font01";
+            src: url(05.font/華康竹風體/華康竹風體W4.ttc)
+        }
+
+        .navbar:hover {
+            width: 20%;
         }
 
         .navbar {
-            width: 20%;
-            height: 100vh;
-            background-image: url(/navbar.jpg);
-            background-size: cover;
-            padding: 0;
-            float: left;
-            font-weight: 700;
-
-        }
-
-        .nav2 {
+            position: fixed;
+            z-index: 999;
+            top: 0;
             width: 10%;
             height: 100vh;
-            background-image: url(/navbar.jpg);
-            background-size: cover;
-            padding: 0;
-            float: left;
-
-        }
-
-        .nav2:hover {
-            width: 20%;
-            height: 100vh;
-            background-image: url(/navbar.jpg);
+            background-image: url(01.material/navbar.jpg);
             background-size: cover;
             padding: 0;
             float: left;
@@ -60,6 +52,7 @@
             height: auto;
             float: left;
             margin: auto;
+            margin-right: 10%;
             background-color: black;
             opacity: 0.5;
         }
@@ -78,11 +71,15 @@
             text-align: center;
         }
 
-        .nav-group li {
+        #nav-group li {
             list-style: none;
             margin-top: 10px;
             padding: 10px;
             font-size: large;
+        }
+
+        #banner-animate {
+            padding-left: 15%;
         }
 
         .section {
@@ -111,27 +108,56 @@
         .text-title {
             writing-mode: vertical-rl;
             text-orientation: upright;
-
+            text-shadow: 1px 1px 7px #000000;
         }
 
         .text-content {
             line-height: 10px;
+            font-size: large;
+            font-weight: bold;
         }
 
         #section02 {
-            background-image: url(/work_工作區域\ 1.jpg);
+            background-image: url(01.material/work_工作區域\ 1.jpg);
         }
 
         #section02-content {
             height: 100vh;
             background-color: black;
-            opacity: 0.5;
+            opacity: 0.3;
             color: white;
-            float: left;
         }
 
-        #section02-content:hover {
-            width: 100%;
+        #section03-l {
+            background-image: url(01.material/section3.jpeg);
+            width: 35%;
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+        }
+
+        #section03-c {
+            width: 45%;
+            height: 100vh;
+            padding: 20px;
+        }
+
+
+        #section03-ct {
+            height: 50vh;
+        }
+
+        #section-cb {
+            height: 50vh;
+        }
+
+
+        .float-r {
+            float: right;
+        }
+
+        .float-l {
+            float: left;
         }
     </style>
 
@@ -143,9 +169,9 @@
         <nav class="navbar ">
             <div class="nav-content">
                 <div class="logo"></div>
-                <img width=60% height=60% src="/logo no bg_工作區域 1.png">
+                <img width=60% height=60% src="01.material/logo no bg_工作區域 1.png">
 
-                <div class="nav-group">
+                <div id="nav-group">
                     <li><a class="nav-item active" href="#">坊間舊憶</a></li>
                     <li><a class="nav-item" href="#">細說三時</a></li>
                     <li><a class="nav-item" href="#">三時精神</a></li>
@@ -159,16 +185,16 @@
         </nav>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide d-flex justify-content-center align-items-center" width=100% height=100%
-                    style="background-image: url(banner01.jpg);">
-                    <img id="banner-animate" src="banner0001.png"></div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background-image: url(01.material/banner01.jpg);">
+                    <img id="banner-animate" src="01.material/banner0001.png"></div>
                 <div class="swiper-slide">
-                    <img width=100% height=100% src="banner6.jpg"></div>
+                    <img width=100% height=100% src="01.material/banner6.jpg"></div>
                 <div class="swiper-slide">
-                    <img width=100% height=100% src="banner5.jpg">
+                    <img width=100% height=100% src="01.material/banner5.jpg">
                 </div>
                 <div class="swiper-slide">
-                    <img width=100% height=100% src="banner4.jpg"> </div>
+                    <img width=100% height=100% src="01.material/banner4.jpg"> </div>
             </div>
             <!-- 這裡是swiper下方點點的div -->
             <div class="swiper-pagination"></div>
@@ -180,8 +206,8 @@
     </header>
     <!-- //////這裡是內容///// -->
     <main>
+        <!-- 第一節-坊間舊憶 -->
         <div id="section01-top" class="section">
-            <div class="nav2"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-2 md-6 text-title pt-5">
@@ -205,7 +231,7 @@
                             <p>溫暖滋味</p>
                         </h5>
                     </div>
-                    <div class="col-md-6 pl-5 pt-5"> <img width=100% src="/攤販拷貝.png"></div>
+                    <div class="col-md-6 pl-5 pt-5"> <img width=100% src="01.material/攤販拷貝.png"></div>
                 </div>
 
             </div>
@@ -216,79 +242,99 @@
 
             </div>
         </div>
-
-        <!--         
-        <div class="section" id="section01"></div>
-        <div class="section" id="section02">
-            <div class="container p-5">
-                <div class="row pl-10 ">
-                    <div class="col-md-7 d-flex ">
-                        <span class="text-title p-2" width=20%>
-                            <h1>坊間舊憶</h1>
-                        </span>
-                        <span class="text-content vertical-align: middle mt-3 ">
-                            <h5>
-                                <p>夜歸的人走在路上</p>
-                                <p>傳來『茶～茶～』的聲響</p>
-                                <p>加快腳步走近</p>
-                                <p> 看見挑著杏仁茶紅字招牌的小販</p>
-                                <p>捧著瓷碗，隨意坐下</p>
-
-                                <p>來碗杏仁茶，暖暖夜裡疲憊的身心</p>
-
-                                <p>順便來根油條，就是很好的夜宵</p>
-
-                                <p>這，就是好多人回憶中的</p>
-                                <p>溫暖滋味</p>
-                            </h5>
-                        </span>
+        <!-- 第二節-細說三時 -->
+        <div id="section02" class="section">
+            <div class="text-title">
+                <div id="section02-content" class="container pt-5 ">
+                    <h1>細說三時</h1>
+                </div>
+                <div class=""><img src="01.material/teapot_工作區域 1.png"></div>
+            </div>
+        </div>
+        <!-- 第三節-三時精神 -->
+        <div class="section" style="background-color:#E5E8E9;">
+            <div id="section03-l"></div>
+            <div id="section03-c">
+                <div class="section-ct">
+                    <span class="text-title float-r">
+                        <h1>三時精神</h1>
+                    </span>
+                    <div class="text-content text-center m-5">
+                        <h5>
+                            <p>不加香精</p>
+                            <p>反覆熬煮杏仁糙米</p>
+                            <p>堅持天然風味</p>
+                            <p>入喉回甘</p>
+                            <p>香氣自然不刺鼻</p>
+                            <p>遵循古法</p>
+                            <p>每口都是最自然的濃純香</p>
+                            <p>最令人懷念的古早味</p>
+                        </h5>
                     </div>
-                    <div class="col-md-5">
-                        <div class="box">
-                            <img class=" rounded mx-auto d-block" width=100% src="/攤販拷貝.png">
+                </div>
+                <div id="section-cb d-flex">
+                    <hr class="my-3">
+                    <h4 class="text-center p-5">美味關鍵</h4>
+                    <div class="row">
+                        <!-- 當頁面 >= md 768 時變成3等分均分(12/3=4) -->
+                        <div class="col-md-4">
+                            <div class="box text-center">
+                                <img class="rounded-circle rounded" width=150 height=150
+                                    src="https://i.pinimg.com/564x/55/83/c7/5583c736a7919fb5dd796196f299f001.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">80%南杏仁</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="box text-center">
+                                <img class="rounded-circle rounded" width=150 height=150
+                                    src="https://i.pinimg.com/564x/2a/ae/8f/2aae8f9e7be654b9fa84cc94a4a2d6eb.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">10%糙米</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box text-center">
+                                <img class="rounded-circle" width=150 height=150
+                                    src="https://i.pinimg.com/564x/19/a5/95/19a59539efc4fe5dabbf6c83ad046007.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">10%冰糖</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-        </div>
-
-        </div>
-        <div id="section02" class="section bg-black">
-            <div class="nav2"></div>
-            <div class="container d-flex">
-                    <div class="text-title">
-                        <div id="section02-content" class="container pt-5">
-                            <span>
-                                <h1>細說三時</h1>
-                            </span>
-                            <div><img src="/teapot_工作區域 1.png"></div>
-                        </div>
-                    </div>
             </div>
         </div>
-
-        <div class="section">
-            <div class="nav2"></div>
-            <div class="content">
-                <img src="/section3.jpeg" width=50% >
-            </div>
-                    <div class="text-title">
-                        <div id="section02-content" class="container pt-5">
-                            <span>
-                                <h1>細說三時</h1>
-                            </span>
-                            <img src="/teapot_工作區域 1.png"></div>
-                </div>
+        <!-- 第四節-最新消息 -->
+        <div id="section04" class="section">
+            <img src="/01.material/section04bg_工作區域 1.png">
+            <div class="container">
+            <div class="row">
             </div>
         </div>
-            
+        <!-- 第四.五節 插圖 -->
+        <div class="section"></div>
 
+        <!-- 第五節-商品介紹 -->
+        <div class="section"></div>
 
-        <footer>
-            <hr class="my-3">
-            <p class="text-center">辛苦了一天，來杯杏仁茶吧</p>
-        </footer>
+        <!-- 第六節-三時據點 -->
+        <div class="section"></div>
+
+        <!-- 第七節聯絡我們； -->
+        <div class="section"></div>
     </main>
+    <footer>
+        <hr class="my-3">
+        <p class="text-center">辛苦了一天，來杯杏仁茶吧</p>
+    </footer>
 
 
 
