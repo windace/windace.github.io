@@ -64,7 +64,7 @@
         .container {
             width: 70%;
             height: auto;
-            float: left;
+            float: right;
             /* background-color: black;
             opacity: 0.5; */
         }
@@ -93,7 +93,7 @@
 
 
         #section01-down {
-            background-color: #9A8080;
+            background-color: #E3BCA9;
         }
 
         .text-title {
@@ -102,7 +102,8 @@
             text-shadow: 1px 1px 7px #000000;
             z-index: 1;
         }
-        .text{
+
+        .text {
             writing-mode: vertical-rl;
             text-orientation: upright;
         }
@@ -157,33 +158,38 @@
             background-size: cover;
             height: 100vh;
         }
-        #section05{
+
+        #section05 {
             background-image: url(/01.material/section05bg_工作區域\ 1.jpg);
             height: 100vh;
         }
-        #section06{
+
+        #section06 {
             background-image: url(/01.material/section06_bg_工作區域\ 1.png);
             background-size: cover;
-            height:auto;
+            height: auto;
         }
-        #section06-5{
+
+        #section06-5 {
             background-image: url(/01.material/section0-5-06.jpg);
             background-size: cover;
             background-position: center;
-            height:40vh;
+            height: 40vh;
         }
-        #illus06-5{
+
+        #illus06-5 {
             background-image: url(/01.material/sectiion06-5-04.png);
             background-size: cover;
-            
+
             width: 200px;
-            
+
         }
-        #section07{
+
+        #section07 {
             background-image: url(/01.material/section07_BG-02.png);
             background-size: cover;
-            background-position: bottom;
-            height:200vh;
+            background-position:top;
+            height: auto;
         }
 
         .float-r {
@@ -227,6 +233,19 @@
         #news01 {
             background-image: url(/01.material/中秋節活動.jpg);
             background-size: cover;
+        }
+
+        #bike {
+            background-image: url(/01.material/bike-03.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 5%;
+        }
+        #circle{
+            background-color: #E5E8E9;
+            width: 80%;
+            height:80%;
+            border-radius: 50%;
         }
     </style>
 
@@ -406,8 +425,10 @@
             <div class="container black">
                 <div id="section04-news" class="row align-items-end">
                     <div class="col-2">
-                        <div class="text-title p-5" >
-                            <span><h1>最新消息</h1></span>
+                        <div class="text-title p-5">
+                            <span>
+                                <h1>最新消息</h1>
+                            </span>
                         </div>
                     </div>
                     <div class="col pb-4 p-5">
@@ -445,8 +466,10 @@
 
                     </div>
                     <div class="pt-5 pl-2">
-                        <div class="text-title" >
-                            <span><h1>傳遞心意</h1></span>
+                        <div class="text-title">
+                            <span>
+                                <h1>傳遞心意</h1>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -482,13 +505,14 @@
                             </span>
                         </div>
                     </div>
-                    <div class="pt-5 pl-3">
-                        <img src="/01.material/section06illus-03.png">
+                    <div class="pt-5 pl-5">
+                        <img src="/01.material/section06illus-03.png" width=80%>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="pl-3">
-                        <img src="/01.material/section06illus-04-04.png"></div>
+                <div class="d-flex justify-content-center align-items-center">
+                    
+                        <img src="/01.material/section06illus-04-04.png" width=50%>
+                    
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="text">
@@ -519,7 +543,7 @@
                     <div class="col pr-5">
                         <img src="/01.material/section06illus-04-05-05.png" width="90%"></div>
                 </div>
-            </div>       
+            </div>
         </div>
         <!-- 第六-5節插畫 -->
         <div id="section06-5" class="section">
@@ -527,31 +551,60 @@
         </div>
         <!-- 第七節三時據點； -->
         <div id="section07" class="section">
-            <div class="container">
-                <div class="d-flex justify-content-left pt-5">
-                    <div class="pl-3 pt-5">
-                        <div class="text-title">
+                <div class="container">
+                    <div class="d-flex justify-content-center pt-5">
+                        <div class="pl-3 pt-5">
+                            <div class="text-title">
+                                <span>
+                                    <h1>三時據點</h1>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bike"></div>
+                    
+                    <div class="row pt-3">
+                        <div class="col"><img src="/01.material/house-04.png" width=90%></div>
+                        <div class="col d-flex align-items-center">
                             <span>
-                                <h1>三時據點</h1>
+                                <h3>三時茶房</h3>
+                                <h5>營業時間:13:00-21:30</br>
+                                    電話:(04)2225-1930</br>
+                                    地址:台中市北區太平路107巷11號</br>
+                                    地理位置:一中街旁太平路巷子內</br></h5>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <span>
+                                <h3>三時福利社</h3>
+                                <h5>營業時間:</br>
+                                    平日: 11:00~22:00</br>
+                                    假日: 10:30~22:00</br>
+
+                                    電話:(04)2301-7301</br>
+                                    地址:台中市西區民生路356號</br>
+                                    地理位置:審計新村園內</br></h5>
+                            </span>
+                        </div>
+                        <div class="col"><img src="/01.material/house-05.png" width=90%></div>
+
+                    </div>
+                    <div class="row pt-3 pb-5">
+                        <div class="col"><img src="/01.material/house-06.png" width=90%></div>
+                        <div class="col pb-5 d-flex justify-content-center align-items-center">
+                            <span>
+                                <h3>三時園道店</h3>
+                                <h5>營業時間:11:00~18:30</br>
+                                    電話:(04)0906-083030</br>
+                                    地址:台中市西區公益路68號</br>
+                                    地理位置:勤美誠品3F</br></h5>
                             </span>
                         </div>
                     </div>
-                </div>
-                <div class="">
-
-                </div>
-                <div class="row pt-5">
-                    <div class="col">圖片</div>
-                    <div class="col">文字</div>
-                </div>
-                <div class="row">
-                    <div class="col">圖片</div>
-                    <div class="col">文字</div>
-                </div>
-                <div class="row">
-                    <div class="col">圖片</div>
-                    <div class="col">文字</div>
-                </div>
+        
             </div>
         </div>
 
