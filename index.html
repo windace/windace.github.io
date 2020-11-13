@@ -122,20 +122,14 @@
 
         #section02-content {
             height: 100vh;
-            width: 20%;
+            width: 100%;
             background-color: black;
             opacity: 0.5;
             color: white;
             text-align: left;
         }
 
-        #section02-content:hover {
-            width: 100%;
-        }
 
-        #section02-pic {
-            display: none
-        }
 
         #section03-l {
             background-image: url(01.material/section3.jpeg);
@@ -270,90 +264,99 @@
             width: 200px;
             height: auto;
         }
+
         body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Maven Pro', sans-serif;
-}
-h1{
-  font-weight: 700;
-}
+            margin: 0;
+            padding: 0;
+            font-family: 'Maven Pro', sans-serif;
+        }
 
-.container {
-  max-width: 700px;
-  padding: 10px;
-  margin: 0px auto;
-}
+        h1 {
+            font-weight: 700;
+        }
 
-/* galleryTop */
-.gallery .swiper-slide {
-  cursor: pointer;
-}
-.gallery img {
-  width: 100%;
-  height: auto;
-}
+        .container {
+            max-width: 700px;
+            padding: 10px;
+            margin: 0px auto;
+        }
 
-/* thumbs */
-.gallery-thumbs .swiper-slide {
-  width: auto;
-  border-radius: 10px;
-  opacity: 0.8;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1;
-  -webkit-filter: initial; /* Safari 6.0 - 9.0 */
-  filter: initial;
-  font-weight: bold;
-  color: #231b93;
-}
+        /* galleryTop */
+        .gallery .swiper-slide {
+            cursor: pointer;
+        }
 
-.gallery-thumbs img {
-  cursor: pointer;
-  width: auto;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: contain;
-}
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
 
-/* buttons */
-.swiper-button-next {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  padding-right: 15px;
-  opacity: 0.2;
-  -webkit-transition: opacity 0.6s; /* For Safari 3.1 to 6.0 */
-  transition: opacity 0.6s;
-}
+        /* thumbs */
+        .gallery-thumbs .swiper-slide {
+            width: auto;
+            border-radius: 10px;
+            opacity: 0.8;
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
 
-.swiper-button-prev {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding-left: 15px;
-  opacity: 0.2;
-  -webkit-transition: opacity 0.6s; /* For Safari 3.1 to 6.0 */
-  transition: opacity 0.6s;
-}
+        .gallery-thumbs .swiper-slide-active {
+            opacity: 1;
+            -webkit-filter: initial;
+            /* Safari 6.0 - 9.0 */
+            filter: initial;
+            font-weight: bold;
+            color: #231b93;
+        }
 
-.swiper-button-prev:hover, .swiper-button-next:hover{
-  opacity: 1;
-}
+        .gallery-thumbs img {
+            cursor: pointer;
+            width: auto;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: contain;
+        }
 
-.swiper-button-next:after, .swiper-container-rtl .swiper-button-next:after{
-  margin-left: auto;
-}
+        /* buttons */
+        .swiper-button-next {
+            width: 50%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            padding-right: 15px;
+            opacity: 0.2;
+            -webkit-transition: opacity 0.6s;
+            /* For Safari 3.1 to 6.0 */
+            transition: opacity 0.6s;
+        }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
- margin-right: auto;
-}
+        .swiper-button-prev {
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding-left: 15px;
+            opacity: 0.2;
+            -webkit-transition: opacity 0.6s;
+            /* For Safari 3.1 to 6.0 */
+            transition: opacity 0.6s;
+        }
 
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            opacity: 1;
+        }
 
+        .swiper-button-next:after,
+        .swiper-container-rtl .swiper-button-next:after {
+            margin-left: auto;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-container-rtl .swiper-button-next:after {
+            margin-right: auto;
+        }
     </style>
 
 </head>
@@ -362,24 +365,23 @@ h1{
     <!-- //////這裡是頁首NAVBAR///// -->
     <header>
         <nav class="navbar d-flex justify-content-center align-items-center ">
-            <div class="logo"></div>
-            <img width=80% src="01.material/logo no bg_工作區域 1.png">
+            <div class="logo" a href="#banner"></div>
+            <a href="#banner"><img width=80% src="01.material/logo no bg_工作區域 1.png"></a>
             <div class="nav-content">
                 <div id="nav-group">
-                    <li><a class="nav-item active" href="#">坊間舊憶</a></li>
-                    <li><a class="nav-item" href="#">細說三時</a></li>
-                    <li><a class="nav-item" href="#">三時精神</a></li>
-                    <li><a class="nav-item" href="#">最新消息</a></li>
-                    <li><a class="nav-item" href="#">傳遞心意</a></li>
-                    <li><a class="nav-item" href="#">經典商品</a></li>
-                    <li><a class="nav-item" href="#">三時據點</a></li>
+                    <li><a class="nav-item active" href="#section01-top">坊間舊憶</a></li>
+                    <li><a class="nav-item" href="#section02">細説三時</a></li>
+                    <li><a class="nav-item" href="#section03">三時精神</a></li>
+                    <li><a class="nav-item" href="#section04">最新消息</a></li>
+                    <li><a class="nav-item" href="#section05">傳遞心意</a></li>
+                    <li><a class="nav-item" href="#section06">經典商品</a></li>
+                    <li><a class="nav-item" href="#section07">三時據點</a></li>
 
                 </div>
             </div>
         </nav>
-
         <!-- //////這裡是頁首BANNER/////  -->
-        <div class="section">
+        <div id="banner" class="section">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide  bg d-flex justify-content-center align-items-center"
@@ -404,7 +406,6 @@ h1{
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-
 
     </header>
     <!-- //////這裡是內容///// -->
@@ -454,19 +455,19 @@ h1{
         </div>
         <!-- 第二節-細說三時 -->
         <div id="section02" class="section">
-            <div class="container ">
+            <div class="container">
                 <div id="section02-content" class="d-flex justify-content-center align-items-center">
                     <div class="text-title">
                         <h1>細説三時</h1>
 
                     </div>
-                    <div id="section02-pic"><img src="01.material/teapot_工作區域 1.png"></div>
+                    <div id="section02-pic"><img src="01.material/teapot_工作區域 1.png" ></div>
                 </div>
             </div>
         </div>
 
         <!-- 第三節-三時精神 -->
-        <div class="section" style="background-color:#E5E8E9;">
+        <div id="section03" class="section" style="background-color:#E5E8E9;">
             <div id="section03-l"></div>
             <div id="section03-c">
                 <span class="text-title float-r pt-5">
@@ -568,8 +569,6 @@ h1{
                 </div>
             </div>
         </div>
-        
-
         <!-- 第五節-傳遞心意 -->
         <div id="section05" class="section">
             <div class="container">
